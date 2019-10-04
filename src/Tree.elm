@@ -298,7 +298,7 @@ flatten t =
 Running the function on the seed should return a label and a list of seeds to
 use for the children.
 
-For example, this function takes and int, and uses the string representation of
+For example, this function takes an int, and uses the string representation of
 that int as the label, with its children representing the integers from 0 up to
 but not including the value. The expected result is a tree in which each label
 has the number of children mentioned in the label, recursively.
@@ -653,7 +653,7 @@ type alias Map2Acc a b c =
 
 {-| Restructure a `Tree` into another type of structure.
 
-Imagine you have a `Tree String` and you can to turn it into nested `<ul>`s.
+Imagine you have a `Tree String` and you want to turn it into nested `<ul>`s.
 This function can help!
 
     import Html exposing (Html)
